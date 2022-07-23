@@ -8,6 +8,7 @@ class Task(models.Model):
     owner=models.ForeignKey(get_user_model(),on_delete=models.CASCADE,blank=True,related_name='tasks')
     title=models.CharField(max_length=200)
     detail=models.TextField()
+    done=models.BooleanField(default=False)
     
     
 
