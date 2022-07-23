@@ -20,5 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('user/',include('user.urls')),
     path('',include('todo.urls')),
-    path('l',include('rest_framework.urls'))
+    
 ]
